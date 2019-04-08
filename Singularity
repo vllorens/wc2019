@@ -2,4 +2,5 @@ Bootstrap: docker
 From: vllorens/wc2019:latest
 
 %runscript
-        jupyter notebook --ip=0.0.0.0 --allow-root
+    exec /usr/local/bin/jupyter notebook  --ip='*' --port=8888 --no-browser
+
